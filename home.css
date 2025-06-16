@@ -1,0 +1,349 @@
+/* Reset margin dan padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styling body */
+body {
+  font-family: 'Cinzel', serif;
+  color: #333;
+  line-height: 1.6;
+  height: auto;
+  width: 100%;
+  margin-bottom: 0;
+  padding-bottom: 120px;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.parallax-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.parallax-background {
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 120%;
+  height: 120%;
+  object-fit: cover;
+  will-change: transform;
+  transition: transform 0.1s ease-out;
+  z-index: -1;
+}
+
+/* Wrapper untuk konten utama */
+.content {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  text-align: center;
+  padding: 30px 20px;
+  
+}
+
+.navbarguide {
+  font-size: 35px;
+  font-family: 'Cinzel', serif;
+  color: #F0FCFF;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+  font-weight: bold;
+  margin-top: -15%;
+  letter-spacing: 1;
+}
+/* Navbar styling */
+.nav {
+  z-index: 1; /* Pastikan menu berada di atas background */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  padding: 0 15px;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  gap: 20px; /* Jarak antar box */
+  flex-wrap: wrap;
+}
+
+.nav li {
+  margin: 0;
+}
+
+.nav a {
+  display: block;
+  padding: 20px 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  text-decoration: none;
+  color:  #ffffff;
+  font-size: 20px;
+  font-family: 'Cinzel', serif;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.nav a:hover {
+  color: #006B70;
+  text-decoration: underline;
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+main {
+  text-align: center;
+  font-size: 50px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Cinzel', serif;  /* Aesthetic serif font */
+  z-index: 1;
+  animation: float 3s ease-in-out infinite;
+  padding: 40px 20px;
+}
+
+main h1 {
+  color: #F0FCFF;  /* Warna terang untuk kontras */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-style: italic;  /* Italic for aesthetic effect */
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+margin: -100px 0 10px 0;
+  padding: 0; /* Menghapus padding */
+  position: relative;
+}
+
+/* Overlay untuk animasi loading */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 9999;
+  display: none;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.logo-icon {
+  max-width: 400px;
+  width: 90%; /* Sesuaikan ukuran sesuai selera */
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin: 0;
+  animation: float 3s ease-in-out infinite;
+  flex-wrap: wrap;
+}
+
+/* Animasi floating sederhana */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+  .menu {
+    flex-direction: column;
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+}
+
+/* Untuk tablet dan ke atas */
+@media (min-width: 601px) {
+  .menu {
+    flex-direction: row;
+    font-size: 18px;
+  }
+}
+
+.welcome-text {
+  font-size: 90px;
+  font-family: 'Cinzel', serif;
+  color: #F0FCFF;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+  margin-bottom: 0;
+  margin-top: 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+
+
+.about-section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  opacity: 0.5;
+  z-index: 0; 
+  position: relative; /* dari absolute */
+  margin-top:30px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 24px;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.08);
+  background: #F0FCFF;
+  max-width: 600px; /* perkecil dari 900px ke 600px */
+  width: 90%; 
+  z-index: 1;
+  position: absolute;
+  top: 135%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-img {
+    width: 70%;
+  }
+
+  .about-text h2 {
+    font-size: 26px;
+  }
+
+  .about-text p {
+    font-size: 18px;
+  }
+
+  .welcome-text {
+    font-size: 40px;
+  }
+
+  main {
+    font-size: 32px;
+    padding: 20px;
+  }
+
+  .nav a {
+    padding: 15px 25px;
+    font-size: 16px;
+  }
+
+  .learn-more-btn {
+    font-size: 15px;
+    padding: 6px 12px;
+  }
+
+  .navbarguide{
+    margin-top: 10px;
+    z-index: 100;
+    font-size: 25px;
+  }
+  
+  .nav{
+      position: fixed;
+      z-index: 100;
+      margin-top: 750px;
+  }
+
+
+  
+}
+
+@media (max-width: 600px) {
+  .about-content {
+    top: 165%; /* naikkan angkanya supaya lebih turun */
+  }
+}
+
+
+
+.about-img {
+  width: 70%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+}
+
+.about-text {
+  max-width: 500px;
+  text-align: justify;
+}
+
+.about-text h2 {
+  font-size: 32px;
+  color: #006B70;
+  margin-bottom: 18px;
+}
+
+.about-text p {
+  font-size: 20px;
+  color: #333;
+  line-height: 1.7;
+  font-weight: bold;
+  opacity: 1;
+}
+
+.learn-more-btn {
+  margin-top: 5px;
+  padding: 15px 35px;
+  background: #006B70;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 20px;
+  font-family: 'Cinzel', serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.learn-more-btn:hover {
+  background: #00A6A6;
+  transform: translateY(-2px) scale(1.05);
+}

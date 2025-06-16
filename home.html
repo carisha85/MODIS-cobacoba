@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MODIS</title>
+  <link rel="stylesheet" href="home.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+  <div id="overlay"></div>
+  <div class="parallax-container">
+    <video id="background" autoplay muted loop playsinline class="parallax-background">
+      <source src="laut.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="content"> 
+    <main>
+      <div class="logo">
+        <div class="welcome-text">Selamat Datang Di</div>
+        <img src="MODISLOGO.png" class="logo-icon">
+        <h1>MODIS</h1>
+        <button id="learnMoreBtn" class="learn-more-btn">Yuk, Kenali Konsep Moral!</button>
+        
+</main>
+
+<section id="about-section" class="about-section">
+  </section>
+  <div class="about-content">
+    <div class="about-text">
+      <h2>Tentang MODIS</h2>
+      <p>
+        Sebelum melangkah lebih jauh, mari kita pahami dulu apa itu moral, bagaimana kita menentukan pilihan yang benar, dan mengapa moral sangat penting dalam kehidupan sehari-hari.
+      </p>
+      <br>
+      <p>
+        Jelajahi konten edukatif kami untuk memperkuat pemahamanmu sebelum mencoba tes yang sudah kami siapkan.
+Selamat belajar dan selamat menjelajah!
+      </p>
+    </div>
+  </div>
+<div class="navbarguide">Yuk, Mulai Menjelajah! </div>
+         <nav class="nav">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="aboutus.html">Tentang MODIS</a></li>
+        <li><a href="game.html">Alat Ukur</a></li>
+        <li><a href="gallery.html">Galeri</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="home.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+  <script>
+document.getElementById('learnMoreBtn').addEventListener('click', function() {
+  document.getElementById('about-section').scrollIntoView({ behavior: 'smooth' });
+});
+</script>
+
+
+</body>
+</html>

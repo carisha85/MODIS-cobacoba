@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alat Ukur - MODIS</title>
+  <link rel="stylesheet" href="game.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <div class="aurora-background"></div> 
+    <div class="sample-bg" id="greekBg"></div>
+    
+    <nav class="nav">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="aboutus.html">Tentang MODIS</a></li>
+        <li><a href="game.html">Alat Ukur</a></li>
+        <li><a href="gallery.html">Galeri</a></li>
+      </ul> 
+    </nav>
+
+    <!-- Halaman Awal (Content Section) -->
+    <section id="content-section" class="page-section">
+      <div class="text">
+        <h1>ALAT UKUR MODIS</h1>
+        <p>Setelah memahami konsep dan aspeknya, yuk coba refleksikan ke dirimu sendiri.</p>
+        <p>Siap untuk mulai tesnya?</p>
+      </div>
+      <!-- Arrow Down Button -->
+      <div class="arrow-down" onclick="scrollToGame()"></div>
+    </section>
+
+    <!-- Halaman Game Section -->
+    <section id="gameSection" class="page-section">
+      <div id="greet-section">
+        <label for="username" class="input-label">What should we call you?</label>
+        <input type="text" id="username" class="underline-input" placeholder="Your name here" />
+        <button id="confirm-btn">Confirm</button>
+      </div>
+
+      <div id="welcome-section" style="display:none;">
+        <h2 id="welcome-message"></h2>
+        <button id="start-btn">Start</button>
+      </div>
+
+      <div id="game-container">
+        <div id="sceneSection" style="display: none;">
+          <!-- Comic Panels Container -->
+          <div id="comicPanels" class="comic-panels" style="display: none;"></div>
+          
+          <img id="sceneImage" style="display:none; max-width:100%; margin-bottom:16px;">
+          <p id="sceneText"></p>
+          <div id="optionsContainer">
+            
+          </div>
+          
+          <!-- Score Section -->
+          <div id="score-section" style="display: none;">
+            <button id="score-btn">Lihat Skor MODIS Kamu</button>
+            <div id="score-display" style="display: none;">
+              <div id="score-text"></div>
+            </div>
+            <button id="play-again-btn" style="display: none;">Play Again</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  <script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="gallery.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="aurora-background"></div> 
+  <div class="sample-bg" id="greekBg"></div>
+  
+  <nav class="nav">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="aboutus.html">Tentang MODIS</a></li>
+      <li><a href="game.html">Alat Ukur</a></li>
+      <li><a href="gallery.html">Galeri</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="content-section" id="hero">
+      <div class="text">
+        <h1>GALLERY</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+        <p>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      
+      <!-- Arrow Down -->
+      <div class="scroll-arrow" id="scrollArrow">
+        <div class="arrow-icon"></div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+      <div class="gallery-container">
+        <div class="gallery-title">
+          <h2>Our Gallery</h2>
+          <p>Explore our beautiful collection of images</p>
+        </div>
+        
+        <div class="slideshow-container">
+          <!-- Slides -->
+          <div class="slide active">
+            <img src="https://images.unsplash.com/photo-1555400001-4-urban-photography?w=800&h=500&fit=crop" alt="Architecture 1">
+            <div class="slide-content">
+              <h3>Ancient Architecture</h3>
+              <p>Magnificent architecture from the classical period</p>
+            </div>
+          </div>
+          
+          <div class="slide">
+            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&h=500&fit=crop" alt="River View">
+            <div class="slide-content">
+              <h3>Beautiful River</h3>
+              <p>Serene river flowing through nature</p>
+            </div>
+          </div>
+          
+          <div class="slide">
+            <img src="https://images.unsplash.com/photo-1520637836862-4d197d17c891?w=800&h=500&fit=crop" alt="Columns">
+            <div class="slide-content">
+              <h3>Historic Columns</h3>
+              <p>Iconic columns standing through time</p>
+            </div>
+          </div>
+          
+          <div class="slide">
+            <img src="https://images.unsplash.com/photo-1594736797933-d0401ba810fe?w=800&h=500&fit=crop" alt="Theater">
+            <div class="slide-content">
+              <h3>Ancient Theater</h3>
+              <p>Historic amphitheater with perfect acoustics</p>
+            </div>
+          </div>
+          
+          <div class="slide">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=500&fit=crop" alt="Landscape">
+            <div class="slide-content">
+              <h3>Beautiful Landscape</h3>
+              <p>Stunning Mediterranean landscape</p>
+            </div>
+          </div>
+          
+          <!-- Navigation Buttons -->
+          <button class="nav-btn prev-btn" id="prevBtn">‹</button>
+          <button class="nav-btn next-btn" id="nextBtn">›</button>
+        </div>
+        
+        <!-- Dots Indicator -->
+        <div class="dots-container">
+          <span class="dot active" data-slide="0"></span>
+          <span class="dot" data-slide="1"></span>
+          <span class="dot" data-slide="2"></span>
+          <span class="dot" data-slide="3"></span>
+          <span class="dot" data-slide="4"></span>
+        </div>
+
+        <!-- Gallery Arrow to Team -->
+        <div class="gallery-scroll-arrow" id="galleryScrollArrow">
+          <div class="gallery-arrow-icon"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section" id="team">
+      <div class="team-container">
+        <div class="team-title">
+          <h2>MEET THE TEAM</h2>
+          <p>Tim yang mengembangkan dan menciptakan website ini</p>
+        </div>
+
+        <!-- Supervisor Section -->
+        <div class="supervisor-section">
+          <div class="supervisor-card" id="supervisorCard">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" alt="Dosen Pembimbing" class="supervisor-img">
+            <div class="supervisor-info">
+              <h3>Dr. Ahmad Supervisor</h3>
+              <p>Dosen Pembimbing</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Leader Section -->
+        <div class="leader-section">
+          <div class="leader-card" id="leaderCard">
+            <img src="https://images.unsplash.com/photo-1494790108755-2616c64e8c5c?w=400&h=400&fit=crop&crop=face" alt="Ketua Tim" class="leader-img">
+            <div class="leader-info">
+              <h3>Sarah Leader</h3>
+              <p>Ketua Tim</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Members Section -->
+        <div class="members-section">
+          <div class="member-card" id="member1">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face" alt="Anggota 1" class="member-img">
+            <div class="member-info">
+              <h3>John Member</h3>
+              <p>Frontend Developer</p>
+            </div>
+          </div>
+
+          <div class="member-card" id="member2">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face" alt="Anggota 2" class="member-img">
+            <div class="member-info">
+              <h3>Lisa Designer</h3>
+              <p>UI/UX Designer</p>
+            </div>
+          </div>
+
+          <div class="member-card" id="member3">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face" alt="Anggota 3" class="member-img">
+            <div class="member-info">
+              <h3>Mike Backend</h3>
+              <p>Backend Developer</p>
+            </div>
+          </div>
+
+          <div class="member-card" id="member4">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop&crop=face" alt="Anggota 4" class="member-img">
+            <div class="member-info">
+              <h3>Anna Tester</h3>
+              <p>Quality Assurance</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="gallery.js"></script>
+
+</body>
+</html>
